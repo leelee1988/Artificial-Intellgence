@@ -1,0 +1,72 @@
+Binary Trees:
+Decision tree algorithms construct a model based on answers from data.
+
+A binary tree is a data Structure based on the idea of nodes that have both a left and a right reference to other nodes. Which then creates a structure where there are a maximum of 2 child nodes from every node.
+The first node is called the root node, and the building block for all other nodes. Apart from that every other node must be directly connected by a parent node.
+
+Each node can up to 2 child nodes, and if it has none its called a leaf.
+
+Task: Binary Tree Creation: 
+Create a Node Class
+
+public class Node {
+  int data;
+  Node left;
+  Node right;
+  
+  public Node(int data) {
+    this.data = data;
+    left = null;
+    right = null;
+}
+
+public void setLeft(Node node){
+  if (left == null)
+    left = node;
+ }
+ 
+public void setRight(Node node) {
+  if (right == null)
+    right = node;
+ }
+ 
+ public Node getLeft() {
+    return left;
+  }
+
+public Node getRight() {
+  return right;
+  }
+  
+public int getData() {
+  return data;
+ }
+ 
+public void setData(int data) {
+  this.data = data;
+  }
+
+In section 3.2 we talk about methods and recursion. Methods can be called within a main program or within other methods. 
+Recursion however is when a method makes a call to itself. 
+
+Using recursion in data structures can lead to smaller and more readable code. However recursion methods can be difficult to wrtie.
+In recursion, a base case and a recursive case must be defined. The base case ends the recursion.
+
+Recursion breaks down the problem until becomes smaller and smaller.
+However the more recursive calls you make the more memory that is required and excessive amount of calls could lead to stackoverflowerror.
+
+Task: Create recursive methods to calculate the following: 
+Facterial:
+a!
+
+public static int factorial(int n) {
+  if (n ==1) {
+  return 1;
+  }
+  return n * factarial(n - 1);
+}
+
+
+
+
+
