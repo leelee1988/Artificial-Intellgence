@@ -1,0 +1,66 @@
+A decision tree can also be used to analyze data. 
+
+Decision trees come into play when trying to extract large groups of information.
+
+Information entropy can be defined as data with a high level of uncertainity will contain more information that can be used.
+Information entropy allows quantification of making the best split in our decisio tree by looking at the variance in the data.
+
+Variance measures how far a data set is spread out.
+
+Infromation gain measures how much entropry is reduced when partititioning on an attriubute.
+
+In section 3.3 we also walked through is ID3 example.
+
+
+To write and algorithm for ID3, thhe decision tree will be stroed in a tree structure.
+
+**Task: create a non-binary tree**
+
+public class Node {
+  private List<node> children = new ArrayList<Node>();
+  private Node parent;
+  private String data;
+  
+  public Node() {
+  
+  }
+  
+  public Node(String data) {
+    setdata(data);
+    }
+}
+
+public void setData(String data) {
+      this.data = data;
+   }
+public String getData() {
+      return data;
+  }
+public List<Node> getChildren() {
+    return children:
+}
+
+public void addCHild(Node node) {
+    node.parent = this;
+    this.children.add(node);
+ }
+ 
+ public void removeChildren() {
+      children = new ArrayList<Node>();
+  }
+  
+  public Node getParent() {
+      return parent;
+    }
+    
+ public void print(String prefix, boolean isTail) {
+  System.out.printIn(preix + (isTail ? "\\-- " :    "|-- ") + data);
+  for (int i = 0; i < children.size() - 1; i++) {
+    children.get(i).print(prefix + (isTail ? "  " : "|  "), false);
+  }
+  if (children.size() > 0) {
+      children.get(children.size() - 1)
+                    .print(prefix + (istail ?"  " : "|  "),
+         true);
+         }
+       }
