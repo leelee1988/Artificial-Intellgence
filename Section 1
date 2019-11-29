@@ -7,4 +7,19 @@ AI machines are built using machine learning, even though there are other approa
 
 We also talk about data exhaust, data exhuast is the trail of data that you leave behind as you journey through your day. Through data exhaust you are constantly providing information.
 
+When we talk about data, data is something we collect. However there is a difference between data and information. Data is the raw product( it gathers all the facts), while information is the data in context.
 
+Machine Learning has 2 categories regarding algorithms  called Supervised Learning and unsupervised Learning.
+
+Supervised Learning occurs when there is information avaible, but not enough information to learn until more data is gathered.
+It has a known label that can feed it data from a training set. This data can be divided into two different categories called independent and dependent data.
+In supervised Learning we also have what we call generalization where you train the algorithm with training data, and test its accuracy with test data.
+
+Unsupervised Learning occurs when the structure of the data set is unknown. Algorithms draw inferences from usually large datasets without labelled respones.
+
+Classification is when the independent data is defined as a class label, and has a definite discrete value. 
+
+Regression is when the ranges of data are stored using real numbers. 
+
+In section 1, we also talk about structured data and how it has a high degree of organization where each item falls into a particular type.
+While unstructured data on the other hand is data that does not conform to the rules of structured data.
