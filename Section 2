@@ -1,0 +1,5 @@
+Machine Learning Workflow is about identifying the entire process that has to happen for Machine Learning to complete a project.
+
+There are many models regarding Machine Learning but in this section they mainly talk about CRISP-DM which can be broken down into 6 stages.
+CRISP has 6 stages business understanding, data understanding, data preparation, modeling, evalution, and deployment.
+
